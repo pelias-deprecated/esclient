@@ -1,0 +1,32 @@
+{
+  "name": "pelias-esclient",
+  "author": "mapzen",
+  "version": "0.0.0",
+  "description": "Pelias elasticsearch client",
+  "homepage": "https://github.com/mapzen/pelias-esclient",
+  "license": "MIT",
+  "main": "esclient.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mapzen/pelias-esclient.git"
+  },
+  "keywords": [
+    "pelias",
+    "elasticsearch",
+    "client"
+  ],
+  "bugs": {
+    "url": "https://github.com/mapzen/pelias-esclient/issues"
+  },
+  "engines": {
+    "node": ">=0.10.26",
+    "npm": ">=1.4.3",
+    "elasticsearch": ">=1.1.1"
+  },
+  "dependencies": {
+    "elasticsearch": "^2.1.4"
+  }
+}
