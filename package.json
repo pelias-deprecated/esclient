@@ -1,7 +1,7 @@
 {
   "name": "pelias-esclient",
   "author": "mapzen",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "Pelias elasticsearch client",
   "homepage": "https://github.com/mapzen/pelias-esclient",
   "license": "MIT",
