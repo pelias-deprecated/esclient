@@ -1,7 +1,7 @@
 {
   "apiVersion": "1.1",
   "keepAlive": true,
-  "requestTimeout": "60000",
+  "requestTimeout": "120000",
   "hosts": [{
     "env": "development",
     "protocol": "http",
