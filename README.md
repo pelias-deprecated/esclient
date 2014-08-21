@@ -1,16 +1,19 @@
 
-### pelias-esclient
+## Installation
 
-A nodejs streaming client for elasticsearch.
+```bash
+$ npm install pelias-esclient
+```
+
+[![NPM](https://nodei.co/npm/pelias-esclient.png?downloads=true&stars=true)](https://nodei.co/npm/pelias-esclient)
+
+Note: you will need `node` and `npm` installed first.
+
+The easiest way to install `node.js` is with [nave.sh](https://github.com/isaacs/nave) by executing `[sudo] ./nave.sh usemain stable`
 
 ### Configuration
 
-The client comes with some sane [defaults](https://github.com/mapzen/pelias-esclient/blob/master/config/defaults.json) for testing on your local machine. If you wish to override any of the default settings you can create a `json` file which contains the properties you wish to override the default config.
-
-You must tell `esclient` where your configuartion is stored using an environment variable:
-```bash
-PELIAS_CONFIG=/tmp/pelias.json node script.js
-```
+see: https://github.com/pelias/config
 
 Full configuration reference: http://www.elasticsearch.org/guide/en/elasticsearch/client/javascript-api/current/configuration.html
 
@@ -39,4 +42,20 @@ var esclient = require('pelias-esclient')();
 some_other_stream.pipe( esclient.stream );
 ```
 
-The library will buffer the incoming stream of commands (as `objects` or `JSON` encoded strings) and buffers them (in batches of 500 by default). It will then flush the records to elasticsearch using the bulk API.
+## Contributing
+
+Please fork and pull request against upstream master on a feature branch.
+
+Pretty please; provide unit tests and script fixtures in the `test` directory.
+
+### Running Unit Tests
+
+```bash
+$ npm test
+```
+
+### Continuous Integration
+
+Travis tests every release against node version `0.10`
+
+[![Build Status](https://travis-ci.org/mapzen/pelias-esclient.png?branch=master)](https://travis-ci.org/geopipes/pelias-esclient)
