@@ -7,7 +7,7 @@
   "license": "MIT",
   "main": "lib/client.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 0"
+    "test": "node test/run.js | tap-spec"
   },
   "repository": {
     "type": "git",
@@ -27,6 +27,11 @@
     "elasticsearch": ">=1.1.1"
   },
   "dependencies": {
-    "elasticsearch": "^2.1.4"
+    "elasticsearch": "^2.1.4",
+    "pelias-config": "^0.0.1"
+  },
+  "devDependencies": {
+    "tape": "^2.13.4",
+    "tap-spec": "^0.2.0"
   }
 }
