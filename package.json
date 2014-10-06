@@ -28,7 +28,8 @@
   },
   "dependencies": {
     "elasticsearch": "^2.1.4",
-    "pelias-config": "^0.0.4"
+    "pelias-config": "^0.0.4",
+    "through2": "^0.6.1"
   },
   "devDependencies": {
     "tape": "^2.13.4",
