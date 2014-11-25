@@ -58,4 +58,4 @@ $ npm test
 
 Travis tests every release against node version `0.10`
 
-[![Build Status](https://travis-ci.org/mapzen/pelias-esclient.png?branch=master)](https://travis-ci.org/geopipes/pelias-esclient)
+[![Build Status](https://travis-ci.org/pelias/esclient.png?branch=master)](https://travis-ci.org/pelias/esclient)
